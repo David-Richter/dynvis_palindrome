@@ -18,4 +18,12 @@ class DynvisPalindromeTest < Minitest::Test
     assert "Madam, I'm Adam.".palindrome?
   end
   
+  def test_int_palindrome
+    assert 123321.palindrome?
+  end
+  
+  def test_int_non_palindrome
+    refute 123.palindrome?
+  end
+
 end
